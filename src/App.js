@@ -1,9 +1,12 @@
-// import { useState } from "react";
+import React from "react";
 import "./App.css";
-import ReactUseState from "./components/ReactUseStateHook";
+import ReactuseState from "./components/ReactuseStateHook";
+import ReactuseEffect from "./components/ReactuseEffectHook";
 
-function App() {
-  // const [state, setState] = useState(0);
+export const userContext = React.createContext();
+
+export default function App() {
+  const [user, setUser] = React.useState("Sateesh");
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -13,10 +16,16 @@ function App() {
       <button onClick={() => setState(state + 1)}>Increment Count</button>&nbsp;
       <button onClick={() => setState(state - 1)}>Decrement Count</button>
       <p>Count:{state}</p> */}
-
-      <ReactUseState />
+      <userContext.Provider value={{ user, setUser }}>
+        <ReactuseState />
+        <ReactuseEffect />
+        <br />
+        <input
+          type="text"
+          value={user}
+          onChange={(e) => setUser(e.target.value)}
+        />
+      </userContext.Provider>
     </div>
   );
 }
-
-export default App;
