@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import ReactuseState from "./components/ReactuseStateHook";
 import ReactuseEffect from "./components/ReactuseEffectHook";
+import ReactuseReducer from "./components/ReactuseReducer/ReactuseReducer";
 
 export const userContext = React.createContext();
 
@@ -18,13 +19,14 @@ export default function App() {
       <p>Count:{state}</p> */}
       <userContext.Provider value={{ user, setUser }}>
         <ReactuseState />
-        <ReactuseEffect />
-        <br />
         <input
           type="text"
           value={user}
           onChange={(e) => setUser(e.target.value)}
         />
+        <ReactuseEffect />
+        <ReactuseReducer />
+        <br />
       </userContext.Provider>
     </div>
   );

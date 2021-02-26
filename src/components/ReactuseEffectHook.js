@@ -3,7 +3,7 @@ import { userContext } from "../App";
 
 import axios from "axios";
 
-function ReactUseEffectHook() {
+export default function ReactuseEffectHook() {
   const [count, setCount] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const { user, setUser } = useContext(userContext);
@@ -36,5 +36,3 @@ function ReactUseEffectHook() {
     </div>
   );
 }
-
-export default ReactUseEffectHook;

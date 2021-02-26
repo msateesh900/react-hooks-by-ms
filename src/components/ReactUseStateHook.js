@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function ReactUseState() {
+export default function ReactuseState() {
   const [count, setCount] = useState(0);
   return (
     <div>
