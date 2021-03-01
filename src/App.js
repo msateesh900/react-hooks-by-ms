@@ -4,11 +4,12 @@ import ReactuseState from "./components/ReactuseState/ReactuseStateHook";
 import ReactuseEffect from "./components/ReactuseEffect/ReactuseEffectHook";
 import ReactuseReducer from "./components/ReactuseReducer/ReactuseReducer";
 import ReactuseStateObjectHook from "./components/ReactuseState/ReactuseStateObjectHook";
+import ReactuseStateArrayHook from "./components/ReactuseState/ReactuseStateArrayHook";
 
 export const userContext = React.createContext();
 
 export default function App() {
-  const [user, setUser] = React.useState("Sateesh");
+  const [user, setUser] = React.useState("");
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -21,15 +22,21 @@ export default function App() {
       <userContext.Provider value={{ user, setUser }}>
         {/* Normal usecase for useStateHook */}
         <ReactuseState />
+        <hr />
         {/* Object useCase for React useState Hook */}
         <ReactuseStateObjectHook />
-
+        <hr />
+        <ReactuseStateArrayHook />
+        <hr />
+        <label>UserName</label>
         <input
           type="text"
           value={user}
           onChange={(e) => setUser(e.target.value)}
+          placeholder="Enter username"
         />
         <ReactuseEffect />
+        <hr />
         <ReactuseReducer />
         <br />
       </userContext.Provider>

@@ -11,9 +11,9 @@ export default function ReactuseState() {
   };
   return (
     <div>
-      <header className="App-header">
-        <b>React Hooks By MS</b>
-      </header>
+      {/* <header className="App-header"> */}
+      <h2>React useState hook for Counter</h2>
+      {/* </header> */}
       <br />
       <button onClick={() => setCount((prevCount) => prevCount + 1)}>
         Increment Count

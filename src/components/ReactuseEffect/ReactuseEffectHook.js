@@ -7,6 +7,7 @@ export default function ReactuseEffectHook() {
   const [count, setCount] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const { user, setUser } = useContext(userContext);
+  const [jsonData, setJsonData] = useState([]);
 
   // first use case
   useEffect(() => {
@@ -16,12 +17,12 @@ export default function ReactuseEffectHook() {
   // second use case
   useEffect(() => {
     axios("https://jsonplaceholder.typicode.com/users")
-      .then((res) => console.log(res.data))
+      .then((res) => setJsonData(res.data))
       .then(() => {
         setLoaded(true);
       });
     return () => {
-      alert("Clean up function/unmounting");
+      console.log("Clean up function/unmounting");
     };
   }, [count]);
 
@@ -32,7 +33,25 @@ export default function ReactuseEffectHook() {
       <button onClick={(prevState) => setCount(prevState.count + 1)}>
         count In UseEffect
       </button>
-      <p>User from useContext:{user}</p>
+      <div>
+        {/* <table>
+          <tbody> */}
+        <h2>User Names</h2>
+        {jsonData ? (
+          jsonData.map((item) => (
+            <span key={item.id}>
+              <p style={{ textAlign: "center" }}>{item.name}</p>
+            </span>
+          ))
+        ) : (
+          <h2>Nothing to Display </h2>
+        )}
+        {/* </tbody>
+        </table> */}
+        <p>
+          User from useContext:<b>{user}</b>
+        </p>
+      </div>
     </div>
   );
 }
