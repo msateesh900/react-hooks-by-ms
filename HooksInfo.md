@@ -26,4 +26,18 @@ React hooks are new fetaure introduced in React 16.8 version which is used to wr
   </li>
  </ol>
 
+### Rules of React Hooks
+
+<ol>
+  <li><ol>
+    <li><b>Only Call Hooks at Top Level.</b></li>
+      <li>Don't call hooks inside loops, conditions or nested functions.</li>
+    </ol>
+  </li>
+  <li><ol>
+    <li><b>Only Call Hooks from React Functions.</b></li>
+    <li>Call React Hooks from React functional components and not from any regular Javascript functions.</li>
+    </ol></li>
+</ol>
+
 Content Source *[YouTube Channel Code Evolution](https://www.youtube.com/watch?v=cF2lQ_gZeA8&list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A)*.
