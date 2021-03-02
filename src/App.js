@@ -1,13 +1,15 @@
 import React from "react";
 import "./App.css";
 import ReactuseState from "./components/ReactuseState/ReactuseStateHook";
-import ReactuseEffect from "./components/ReactuseEffect/ReactuseEffectHook";
+import DataFetchReactuseEffectHook from "./components/ReactuseEffect/DataFetchReactuseEffectHook";
 import ReactuseReducer from "./components/ReactuseReducer/ReactuseReducer";
 import ReactuseStateObjectHook from "./components/ReactuseState/ReactuseStateObjectHook";
 import ReactuseStateArrayHook from "./components/ReactuseState/ReactuseStateArrayHook";
 import ReactuseEffectAfterRender from "./components/ReactuseEffect/ReactuseEffectAfterRender";
 import ConditionalReactuseEffect from "./components/ReactuseEffect/ConditionalReactuseEffect";
 import RunReactuseEffectOnlyOnce from "./components/ReactuseEffect/RunReactuseEffectOnlyOnce";
+import CleanupWithReactuseEffect from "./components/ReactuseEffect/CleanupWithReactuseEffect";
+import ReactuseEffectWithDifferentDepenedencies from "./components/ReactuseEffect/ReactuseEffectWithDifferentDepenedencies";
 
 export const userContext = React.createContext();
 
@@ -38,13 +40,17 @@ export default function App() {
           onChange={(e) => setUser(e.target.value)}
           placeholder="Enter username"
         />
-        <ReactuseEffect />
+        <DataFetchReactuseEffectHook />
         <hr />
         <ReactuseEffectAfterRender />
         <hr />
         <ConditionalReactuseEffect />
         <hr />
         <RunReactuseEffectOnlyOnce />
+        <hr />
+        <CleanupWithReactuseEffect />
+        <hr />
+        <ReactuseEffectWithDifferentDepenedencies />
         <hr />
         <ReactuseReducer />
         <br />

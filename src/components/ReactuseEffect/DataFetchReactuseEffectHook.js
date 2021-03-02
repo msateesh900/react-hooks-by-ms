@@ -3,7 +3,7 @@ import { userContext } from "../../App";
 
 import axios from "axios";
 
-export default function ReactuseEffectHook() {
+export default function DataFetchReactuseEffectHook() {
   const [count, setCount] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const { user, setUser } = useContext(userContext);
@@ -18,7 +18,10 @@ export default function ReactuseEffectHook() {
   // second use case
   useEffect(() => {
     axios("https://jsonplaceholder.typicode.com/users")
-      .then((res) => setJsonData(res.data))
+      .then((res) => {
+        setJsonData(res.data);
+        console.log(res.data);
+      })
       .then(() => {
         setLoaded(true);
       })
@@ -34,7 +37,7 @@ export default function ReactuseEffectHook() {
   useEffect(() => {});
   return (
     <div>
-      <h1>Use Effect Hook here</h1>
+      <h1>Use Effect Hook here for data Fetching</h1>
       <button onClick={(prevState) => setCount(prevState.count + 1)}>
         count In UseEffect
       </button>

@@ -12,6 +12,11 @@ function RunReactuseEffectOnlyOnce() {
   useEffect(() => {
     console.log("useEffect called");
     window.addEventListener("mousemove", logMousePosition);
+    // Added for cleanupWithReactuseEffect.js file
+    return () => {
+      console.log("unmountin mouse event from DOM");
+      window.removeEventListener("mousemove", logMousePosition);
+    };
   }, []);
   return (
     <div>

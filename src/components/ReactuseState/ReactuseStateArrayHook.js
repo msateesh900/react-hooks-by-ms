@@ -18,6 +18,7 @@ export default function ReactuseStateArrayHook() {
   };
   return (
     <div>
+      <h2>React useState Array Hook</h2>
       <input type="number" onChange={(e) => setNumber(e.target.value)} />
       &nbsp;
       <button onClick={addRandomNumber}> Add to Number to Array</button>
