@@ -8,6 +8,7 @@ export default function ReactuseEffectHook() {
   const [loaded, setLoaded] = useState(false);
   const { user, setUser } = useContext(userContext);
   const [jsonData, setJsonData] = useState([]);
+  const [error, setError] = useState("");
 
   // first use case
   useEffect(() => {
@@ -20,11 +21,15 @@ export default function ReactuseEffectHook() {
       .then((res) => setJsonData(res.data))
       .then(() => {
         setLoaded(true);
+      })
+      .catch((err) => {
+        setError(err);
       });
+    // ComponentWillUnmount lifecycle
     return () => {
       console.log("Clean up function/unmounting");
     };
-  }, [count]);
+  }, [loaded]);
 
   useEffect(() => {});
   return (
@@ -36,21 +41,32 @@ export default function ReactuseEffectHook() {
       <div>
         {/* <table>
           <tbody> */}
-        <h2>User Names</h2>
-        {jsonData ? (
-          jsonData.map((item) => (
-            <span key={item.id}>
-              <p style={{ textAlign: "center" }}>{item.name}</p>
-            </span>
-          ))
+        {error.length > 1 ? (
+          <div style={{ textcolor: "red" }}>Error in request</div>
         ) : (
-          <h2>Nothing to Display </h2>
+          <span></span>
         )}
-        {/* </tbody>
+        {!loaded && error.length > 1 ? (
+          <h1>Loading....</h1>
+        ) : (
+          <>
+            <h2>User Names</h2>
+            {jsonData ? (
+              jsonData.map((item) => (
+                <span key={item.id}>
+                  <p style={{ textAlign: "center" }}>{item.name}</p>
+                </span>
+              ))
+            ) : (
+              <h2>Nothing to Display </h2>
+            )}
+            {/* </tbody>
         </table> */}
-        <p>
-          User from useContext:<b>{user}</b>
-        </p>
+            <p>
+              User from useContext:<b>{user}</b>
+            </p>
+          </>
+        )}
       </div>
     </div>
   );

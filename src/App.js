@@ -5,6 +5,9 @@ import ReactuseEffect from "./components/ReactuseEffect/ReactuseEffectHook";
 import ReactuseReducer from "./components/ReactuseReducer/ReactuseReducer";
 import ReactuseStateObjectHook from "./components/ReactuseState/ReactuseStateObjectHook";
 import ReactuseStateArrayHook from "./components/ReactuseState/ReactuseStateArrayHook";
+import ReactuseEffectAfterRender from "./components/ReactuseEffect/ReactuseEffectAfterRender";
+import ConditionalReactuseEffect from "./components/ReactuseEffect/ConditionalReactuseEffect";
+import RunReactuseEffectOnlyOnce from "./components/ReactuseEffect/RunReactuseEffectOnlyOnce";
 
 export const userContext = React.createContext();
 
@@ -36,6 +39,12 @@ export default function App() {
           placeholder="Enter username"
         />
         <ReactuseEffect />
+        <hr />
+        <ReactuseEffectAfterRender />
+        <hr />
+        <ConditionalReactuseEffect />
+        <hr />
+        <RunReactuseEffectOnlyOnce />
         <hr />
         <ReactuseReducer />
         <br />
