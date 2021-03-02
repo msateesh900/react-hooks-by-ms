@@ -10,6 +10,7 @@ import ConditionalReactuseEffect from "./components/ReactuseEffect/ConditionalRe
 import RunReactuseEffectOnlyOnce from "./components/ReactuseEffect/RunReactuseEffectOnlyOnce";
 import CleanupWithReactuseEffect from "./components/ReactuseEffect/CleanupWithReactuseEffect";
 import ReactuseEffectWithDifferentDepenedencies from "./components/ReactuseEffect/ReactuseEffectWithDifferentDepenedencies";
+import DataFetchingWIthReactuseEffectWithSpecificID from "./components/ReactuseEffect/DataFetchingWIthReactuseEffectWithSpecificID";
 
 export const userContext = React.createContext();
 
@@ -51,6 +52,8 @@ export default function App() {
         <CleanupWithReactuseEffect />
         <hr />
         <ReactuseEffectWithDifferentDepenedencies />
+        <hr />
+        <DataFetchingWIthReactuseEffectWithSpecificID />
         <hr />
         <ReactuseReducer />
         <br />
