@@ -3,6 +3,8 @@ import ComponentC from "./ComponentC";
 
 export const UserContext = React.createContext();
 
+export const ChannelContext = React.createContext();
+
 function CommunicationusingReactuseContextHook() {
   return (
     <div>
@@ -11,7 +13,9 @@ function CommunicationusingReactuseContextHook() {
       <h2>Basic communication b/w components using ReactuseContext</h2>
       <p>The value provided using UserContext using React useContext Hook</p>
       <UserContext.Provider value={"Sateesh"}>
-        <ComponentC />
+        <ChannelContext.Provider value={"Code Evolution"}>
+          <ComponentC />
+        </ChannelContext.Provider>
       </UserContext.Provider>
     </div>
   );
