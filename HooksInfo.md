@@ -40,4 +40,12 @@ React hooks are new fetaure introduced in React 16.8 version which is used to wr
     </ol></li>
 </ol>
 
+### Covered Hooks
+<ul>
+  <li>useState    -     Related to State</li>
+  <li>useEffect   -     Related to side effects (used for data fetching,posting...etc)</li>
+  <li>useContext  -     Related to context API</li>
+  <li>useReducer  -     Related to reducer</li>
+</ul>
+
 Content Source *[YouTube Channel Code Evolution](https://www.youtube.com/watch?v=cF2lQ_gZeA8&list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A)*.
