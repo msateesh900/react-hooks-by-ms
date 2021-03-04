@@ -15,8 +15,8 @@ import SimpleCountUsingReactuseReducer from "./components/ReactuseReducer/Simple
 import ComplexCountUsingReactuseReducerHook from "./components/ReactuseReducer/ComplexCountUsingReactuseReducerHook";
 import SimpleCountUsingMultipleReducers from "./components/ReactuseReducer/SimpleCountUsingMultipleReducers";
 import ReactuseReducerWithuseContextHook from "./components/ReactuseReducerWithuseContext/ReactuseReducerWithuseContextHook";
-import DataFetchingUsinguseStateAnduseEffect from "./components/HookCombinations/DataFetchingUsinguseStateAnduseEffect";
-import DataFetchingUsinguseReducerAnduseEffect from "./components/HookCombinations/DataFetchingUsinguseReducerAnduseEffect";
+import DataFetchingUsinguseStateAnduseEffect from "./components/ReactHookCombinations/DataFetchingUsinguseStateAnduseEffect";
+import DataFetchingUsinguseReducerAnduseEffect from "./components/ReactHookCombinations/DataFetchingUsinguseReducerAnduseEffect";
 
 export const userContext = React.createContext();
 
