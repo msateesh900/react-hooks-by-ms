@@ -22,7 +22,7 @@ function ReactuseEffectWithDifferentDepenedencies() {
 
   return (
     <div>
-      <h2>React useEffect With Different Depenedencies</h2>
+      <h3>React useEffect With Different Depenedencies</h3>
       {count}
     </div>
   );

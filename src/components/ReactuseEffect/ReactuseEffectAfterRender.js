@@ -12,7 +12,7 @@ function ReactuseEffectAfterRender() {
 
   return (
     <div>
-      <h2>ReactuseEffect After Render</h2>
+      <h3>ReactuseEffect After Render</h3>
       <button onClick={() => setCount(count + 1)}>count{count}</button>
     </div>
   );

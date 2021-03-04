@@ -12,7 +12,7 @@ export default function ReactuseState() {
   return (
     <div>
       {/* <header className="App-header"> */}
-      <h2>React useState hook for Counter</h2>
+      <h3>React useState hook for Counter</h3>
       {/* </header> */}
       <br />
       <button onClick={() => setCount((prevCount) => prevCount + 1)}>

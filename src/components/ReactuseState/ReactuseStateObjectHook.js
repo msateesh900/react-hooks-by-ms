@@ -4,7 +4,7 @@ export default function ReactuseStateObjectHook() {
   const [user, setUser] = useState({ firstname: "", lastname: "" });
   return (
     <form>
-      <h2>React useStateObjectHook</h2>
+      <h3>React useStateObjectHook</h3>
       <input
         type="text"
         value={user.firstname}

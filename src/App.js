@@ -2,7 +2,6 @@ import React from "react";
 import "./App.css";
 import ReactuseState from "./components/ReactuseState/ReactuseStateHook";
 import DataFetchReactuseEffectHook from "./components/ReactuseEffect/DataFetchReactuseEffectHook";
-import ReactuseReducer from "./components/ReactuseReducer/ReactuseReducer";
 import ReactuseStateObjectHook from "./components/ReactuseState/ReactuseStateObjectHook";
 import ReactuseStateArrayHook from "./components/ReactuseState/ReactuseStateArrayHook";
 import ReactuseEffectAfterRender from "./components/ReactuseEffect/ReactuseEffectAfterRender";
@@ -12,6 +11,9 @@ import CleanupWithReactuseEffect from "./components/ReactuseEffect/CleanupWithRe
 import ReactuseEffectWithDifferentDepenedencies from "./components/ReactuseEffect/ReactuseEffectWithDifferentDepenedencies";
 import DataFetchingWIthReactuseEffectWithSpecificID from "./components/ReactuseEffect/DataFetchingWIthReactuseEffectWithSpecificID";
 import CommunicationusingReactuseContextHook from "./components/ReactuseContext/BasicUseCase/CommunicationusingReactuseContextHook";
+import SimpleCountUsingReactuseReducer from "./components/ReactuseReducer/SimpleCountUsingReactuseReducer";
+import ComplexCountUsingReactuseReducerHook from "./components/ReactuseReducer/ComplexCountUsingReactuseReducerHook";
+import SimpleCountUsingMultipleReducers from "./components/ReactuseReducer/SimpleCountUsingMultipleReducers";
 
 export const userContext = React.createContext();
 
@@ -58,7 +60,11 @@ export default function App() {
         <hr />
         <CommunicationusingReactuseContextHook />
         <hr />
-        <ReactuseReducer />
+        <SimpleCountUsingReactuseReducer />
+        <hr />
+        <ComplexCountUsingReactuseReducerHook />
+        <hr />
+        <SimpleCountUsingMultipleReducers />
         <br />
       </userContext.Provider>
     </div>

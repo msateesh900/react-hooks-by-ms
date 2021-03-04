@@ -10,7 +10,7 @@ function CommunicationusingReactuseContextHook() {
     <div>
       {/* React context provides a way to pass data through the component tree without having 
       to pass props down manullayat every level */}
-      <h2>Basic communication b/w components using ReactuseContext</h2>
+      <h3>Basic communication b/w components using ReactuseContext</h3>
       <p>The value provided using UserContext using React useContext Hook</p>
       <UserContext.Provider value={"Sateesh"}>
         <ChannelContext.Provider value={"Code Evolution"}>

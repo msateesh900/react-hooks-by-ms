@@ -34,11 +34,11 @@ const reducer = (state, action) => {
       return state;
   }
 };
-function ReactuseReducer() {
+function SimpleCountUsingReactuseReducer() {
   const [count, dispatch] = useReducer(reducer, initialState);
   return (
     <div>
-      <h2>Count Example using React useReducer Hook</h2>
+      <h3>Count Example using React useReducer Hook</h3>
       <button onClick={() => dispatch("increment")}>Increment</button>&nbsp;
       <button onClick={() => dispatch("decrement")}>Decrement</button>&nbsp;
       <button onClick={() => dispatch("reset")}>Reset</button>
@@ -47,4 +47,4 @@ function ReactuseReducer() {
   );
 }
 
-export default ReactuseReducer;
+export default SimpleCountUsingReactuseReducer;

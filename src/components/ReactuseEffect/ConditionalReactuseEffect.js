@@ -9,7 +9,7 @@ function ConditionalReactuseEffect() {
   }, [count]);
   return (
     <div>
-      <h2>Conditionally render using React use Effect</h2>
+      <h3>Conditionally render using React use Effect</h3>
       <input
         type="text"
         value={name}

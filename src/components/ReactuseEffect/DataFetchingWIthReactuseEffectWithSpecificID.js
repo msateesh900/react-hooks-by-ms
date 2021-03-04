@@ -20,7 +20,7 @@ function DataFetchingWIthReactuseEffectWithSpecificID() {
   }, [idFromButtonClick]);
   return (
     <div>
-      <h2>Data Fetching with React Use Effect with ID</h2>
+      <h3>Data Fetching with React Use Effect with ID</h3>
       <input value={id} onChange={(e) => setId(e.target.value)} />
       &nbsp;
       <button onClick={handleButtonClick}>Fetch Post</button>

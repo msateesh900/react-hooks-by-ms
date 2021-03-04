@@ -37,7 +37,7 @@ export default function DataFetchReactuseEffectHook() {
   useEffect(() => {});
   return (
     <div>
-      <h1>Use Effect Hook here for data Fetching</h1>
+      <h3>Use Effect Hook here for data Fetching</h3>
       <button onClick={(prevState) => setCount(prevState.count + 1)}>
         count In UseEffect
       </button>
