@@ -53,5 +53,14 @@ React hooks are new fetaure introduced in React 16.8 version which is used to wr
   <li>useReducer -  used for local state management</li>
   <li>share the state between the components(useReducerWithuseContext) - Global state management</li>
  </ol>
+ 
+ ### useState vs useReducer
+ | Scenario  | useState | useReducer 
+| ------------- | ------------- | ------------- |
+| Type of Content  | Number,String,Boolean  |Object or Array
+| Number of State Transitions  | One or Two  | Too Many 
+| Related State Transitions  | No  | Yes
+| Number of State Transitions  | No Business Logic  | Complex business Logic
+| Local vs Global  | Local  | Global
 
 Content Source *[YouTube Channel Code Evolution](https://www.youtube.com/watch?v=cF2lQ_gZeA8&list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A)*.
