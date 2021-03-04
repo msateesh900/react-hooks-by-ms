@@ -14,6 +14,7 @@ import CommunicationusingReactuseContextHook from "./components/ReactuseContext/
 import SimpleCountUsingReactuseReducer from "./components/ReactuseReducer/SimpleCountUsingReactuseReducer";
 import ComplexCountUsingReactuseReducerHook from "./components/ReactuseReducer/ComplexCountUsingReactuseReducerHook";
 import SimpleCountUsingMultipleReducers from "./components/ReactuseReducer/SimpleCountUsingMultipleReducers";
+import ReactuseReducerWithuseContextHook from "./components/ReactuseReducerWithuseContext/ReactuseReducerWithuseContextHook";
 
 export const userContext = React.createContext();
 
@@ -65,6 +66,8 @@ export default function App() {
         <ComplexCountUsingReactuseReducerHook />
         <hr />
         <SimpleCountUsingMultipleReducers />
+        <hr />
+        <ReactuseReducerWithuseContextHook />
         <br />
       </userContext.Provider>
     </div>
