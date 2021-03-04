@@ -48,4 +48,10 @@ React hooks are new fetaure introduced in React 16.8 version which is used to wr
   <li>useReducer  -     Related to reducer</li>
 </ul>
 
+### useReducer with useContext
+<ol>
+  <li>useReducer -  used for local state management</li>
+  <li>share the state between the components(useReducerWithuseContext) - Global state management</li>
+ </ol>
+
 Content Source *[YouTube Channel Code Evolution](https://www.youtube.com/watch?v=cF2lQ_gZeA8&list=PLC3y8-rFHvwisvxhZ135pogtX7_Oe3Q3A)*.
