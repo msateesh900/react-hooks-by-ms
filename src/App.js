@@ -17,6 +17,7 @@ import SimpleCountUsingMultipleReducers from "./components/ReactuseReducer/Simpl
 import ReactuseReducerWithuseContextHook from "./components/ReactuseReducerWithuseContext/ReactuseReducerWithuseContextHook";
 import DataFetchingUsinguseStateAnduseEffect from "./components/ReactHookCombinations/DataFetchingUsinguseStateAnduseEffect";
 import DataFetchingUsinguseReducerAnduseEffect from "./components/ReactHookCombinations/DataFetchingUsinguseReducerAnduseEffect";
+import ReactuseCallBackHook from "./components/ReactuseCallBackHook/ReactuseCallBackHook";
 
 export const userContext = React.createContext();
 
@@ -74,6 +75,8 @@ export default function App() {
         <DataFetchingUsinguseStateAnduseEffect />
         <hr />
         <DataFetchingUsinguseReducerAnduseEffect />
+        <hr />
+        <ReactuseCallBackHook />
         <br />
       </userContext.Provider>
     </div>
