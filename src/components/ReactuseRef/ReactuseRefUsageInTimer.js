@@ -14,6 +14,7 @@ function ReactuseRefUsageInTimer() {
   });
   return (
     <div>
+      <h3>Building Timer using React useRef Hook</h3>
       <p>timer-{timer}</p>
       <button onClick={() => clearInterval(intervalRef.current)}>
         Clear Timer
