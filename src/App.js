@@ -22,6 +22,7 @@ import PerformanceOptimizationUsingReactuseMemoHook from "./components/ReactuseM
 import ReactuseRefToFocusInput from "./components/ReactuseRef/ReactuseRefToFocusInput";
 import ReactuseRefUsageInTimer from "./components/ReactuseRef/ReactuseRefUsageInTimer";
 import ReactuseDocumentTitleCustomHookUsage from "./components/CustomHooks/ReactuseDocumentTitleCustomHook/ReactuseDocumentTitleCustomHookUsage";
+import ReactuseCounterCustomHook from "./components/CustomHooks/ReactuseCounterCustomHook/ReactuseCounterCustomHook";
 
 export const userContext = React.createContext();
 
@@ -89,6 +90,8 @@ export default function App() {
         <ReactuseRefUsageInTimer />
         <hr />
         <ReactuseDocumentTitleCustomHookUsage />
+        <hr />
+        <ReactuseCounterCustomHook />
         <br />
       </userContext.Provider>
     </div>
