@@ -18,6 +18,7 @@ import ReactuseReducerWithuseContextHook from "./components/ReactuseReducerWithu
 import DataFetchingUsinguseStateAnduseEffect from "./components/ReactHookCombinations/DataFetchingUsinguseStateAnduseEffect";
 import DataFetchingUsinguseReducerAnduseEffect from "./components/ReactHookCombinations/DataFetchingUsinguseReducerAnduseEffect";
 import ReactuseCallBackHook from "./components/ReactuseCallBackHook/ReactuseCallBackHook";
+import PerformanceOptimizationUsingReactuseMemoHook from "./components/ReactuseMemo/PerformanceOptimizationUsingReactuseMemoHook";
 
 export const userContext = React.createContext();
 
@@ -77,6 +78,8 @@ export default function App() {
         <DataFetchingUsinguseReducerAnduseEffect />
         <hr />
         <ReactuseCallBackHook />
+        <hr />
+        <PerformanceOptimizationUsingReactuseMemoHook />
         <br />
       </userContext.Provider>
     </div>
