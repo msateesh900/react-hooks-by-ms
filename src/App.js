@@ -19,6 +19,8 @@ import DataFetchingUsinguseStateAnduseEffect from "./components/ReactHookCombina
 import DataFetchingUsinguseReducerAnduseEffect from "./components/ReactHookCombinations/DataFetchingUsinguseReducerAnduseEffect";
 import ReactuseCallBackHook from "./components/ReactuseCallBackHook/ReactuseCallBackHook";
 import PerformanceOptimizationUsingReactuseMemoHook from "./components/ReactuseMemo/PerformanceOptimizationUsingReactuseMemoHook";
+import ReactuseRefToFocusInput from "./components/ReactuseRef/ReactuseRefToFocusInput";
+import ReactuseRefUsageInTimer from "./components/ReactuseRef/ReactuseRefUsageInTimer";
 
 export const userContext = React.createContext();
 
@@ -80,6 +82,10 @@ export default function App() {
         <ReactuseCallBackHook />
         <hr />
         <PerformanceOptimizationUsingReactuseMemoHook />
+        <hr />
+        <ReactuseRefToFocusInput />
+        <hr />
+        <ReactuseRefUsageInTimer />
         <br />
       </userContext.Provider>
     </div>
