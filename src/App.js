@@ -37,15 +37,16 @@ export default function App() {
       <button onClick={() => setState(state + 1)}>Increment Count</button>&nbsp;
       <button onClick={() => setState(state - 1)}>Decrement Count</button>
       <p>Count:{state}</p> */}
-      <userContext.Provider value={{ user, setUser }}>
-        {/* Normal usecase for useStateHook */}
-        <ReactuseState />
-        <hr />
-        {/* Object useCase for React useState Hook */}
-        <ReactuseStateObjectHook />
-        <hr />
-        <ReactuseStateArrayHook />
-        <hr />
+      {/* <userContext.Provider value={{ user, setUser }}> */}
+      {/* Normal usecase for useStateHook */}
+      <ReactuseState />
+      <hr />
+      {/* Object useCase for React useState Hook */}
+      <ReactuseStateObjectHook />
+      <hr />
+      <ReactuseStateArrayHook />
+      <hr />
+      {/*
         <label>UserName</label>
         <input
           type="text"
@@ -94,6 +95,7 @@ export default function App() {
         <ReactuseCounterCustomHook />
         <br />
       </userContext.Provider>
+      */}
     </div>
   );
 }
